@@ -37,6 +37,7 @@ let Bus = {
 }
 
 module.exports = Bus;
+<<<<<<< HEAD
 
 # 使用
 npm install snow-bus --save
@@ -50,3 +51,5 @@ Vue.prototype.$bus = Bus;
 this.$bus.watch("ADD_TODE", this.addTodo);
 发布
 this.$bus.trigger('ADD_TODE',item);
+=======
+>>>>>>> fabd8c20988d10390cf33facf987b261467c7d9e
