@@ -1,0 +1,8 @@
+{
+  "name": "snow-bus",
+  "version": "1.0.1",
+  "description": "订阅发布模式",
+  "main": "index.js",
+  "author": "蓝枫",
+  "license": "ISC"
+}
