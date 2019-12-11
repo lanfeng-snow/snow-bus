@@ -8,6 +8,7 @@
 ### 存放 订阅消息
 let _listeners = {};
 
+### 定义对象
 let Bus = {
   ### 添加 订阅
   watch(target, callback) {
@@ -35,7 +36,7 @@ let Bus = {
     }
   }
 }
-
+### 导出对象
 module.exports = Bus;
 
 # 使用
@@ -45,8 +46,8 @@ vue项目中 main.js 引入
 import Bus from 'snow-bus'
 Vue.prototype.$bus = Bus;
 
-组件中使用
-订阅
+### 组件中使用
+### 订阅
 this.$bus.watch("ADD_TODE", this.addTodo);
-发布
+### 发布
 this.$bus.trigger('ADD_TODE',item);
