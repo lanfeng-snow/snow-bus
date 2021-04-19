@@ -58,6 +58,9 @@ this.$bus.trigger('ADD_TODE',item);
  * @desc 订阅发布模式。
  */
 listener.apply(this, args)改为listener(args)
+
 vue项目中 main.js 引入
+
 import Bus from 'snow-bus'
+
 Vue.use(Bus)
