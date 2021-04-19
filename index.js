@@ -1,24 +1,24 @@
 /**
- * Created by 蓝枫 on 2019/5/21.
+ * Created by 蓝枫 on 2021/4/19.
  * @desc 订阅发布模式。
  */
 
 let _listeners = {};
 
 let Bus = {
-  watch(target, callback) {
+  watch (target, callback) {
     if (!_listeners[target]) {
       _listeners[target] = [];
     }
     _listeners[target].push(callback);
   },
-  trigger(target, ...args) {
+  trigger (target, ...args) {
     if (!_listeners[target]) return false;
     _listeners[target].forEach(listener => {
-      listener.apply(this, args)
+      listener(args)
     })
   },
-  unwatch(target, callback) {
+  unwatch (target, callback) {
     if (!_listeners[target]) return false;
     if (!callback) {
       _listeners[target] = [];
@@ -30,4 +30,8 @@ let Bus = {
   }
 }
 
-module.exports = Bus;
+export default {
+  install (Vue) {
+    Vue.prototype.$bus = Bus;
+  }
+}
