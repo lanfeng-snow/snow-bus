@@ -51,3 +51,13 @@ Vue.prototype.$bus = Bus;
 this.$bus.watch("ADD_TODE", this.addTodo);
 ### 发布
 this.$bus.trigger('ADD_TODE',item);
+
+# 订阅发布模式
+/**
+ * Created by 蓝枫 on 2021/4/19.
+ * @desc 订阅发布模式。
+ */
+listener.apply(this, args)改为listener(args)
+vue项目中 main.js 引入
+import Bus from 'snow-bus'
+Vue.use(Bus)
