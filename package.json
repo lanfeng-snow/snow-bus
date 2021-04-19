@@ -1,8 +1,36 @@
 {
-  "name": "snow-bus",
-  "version": "1.0.1",
+  "_from": "snow-bus",
+  "_id": "snow-bus@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-CrqFOO8wooWMqj7qSwjuvlkGWes=",
+  "_location": "/snow-bus",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "snow-bus",
+    "name": "snow-bus",
+    "escapedName": "snow-bus",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.nlark.com/snow-bus/download/snow-bus-1.0.2.tgz",
+  "_shasum": "0aba8538ef30a2858caa3eea4b08eebe590659eb",
+  "_spec": "snow-bus",
+  "_where": "C:\\Users\\lx\\Desktop\\ele",
+  "author": {
+    "name": "蓝枫"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "订阅发布模式",
+  "license": "ISC",
   "main": "index.js",
-  "author": "蓝枫",
-  "license": "ISC"
+  "name": "snow-bus",
+  "version": "2.0.1"
 }
